@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-wrapper">
+  <div class="container">
+    <header>
+      <div class='title'>
+        <p>calc</p>
+      </div>
+      <div class='toggle'>
+        <p>THEME</p>
+        <div class='theme-switch'>
+          <div class='toggle-number'>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
+          <div class='toggle-ball-wrapper'>
+            <div class='ball'></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class='inputBox'></div>
+    <main class='wrapper'>
+      <div class='calc-buttons'>
+        <button type='button' class='num' id='seven' data-number>7</button>
+        <button type='button' class='num' id='eight' data-number>8</button>
+        <button type='button' class='num' id='nine' data-number>9</button>
+        <button type='button' class='delete' id='del' data-delete>DEL</button>
+      </div>
+      <div class='calc-buttons'>
+        <button type='button' class='num' id='four' data-number>4</button>
+        <button type='button' class='num' id='five' data-number>5</button>
+        <button type='button' class='num' id='six' data-number>6</button>
+        <button type='button' class='operator' id='add' data-operation>+</button>
+      </div>
+      <div class='calc-buttons'>
+        <button type='button' class='num' id='one' data-number>1</button>
+        <button type='button' class='num' id='two' data-number>2</button>
+        <button type='button' class='num' id='three' data-number>3</button>
+        <button type='button' class='operator' id='subtract' data-operation>-</button>
+      </div>
+      <div class='calc-buttons'>
+        <button type='button' class='num' id='dot' data-number>.</button>
+        <button type='button' class='num' id='zero' data-number>0</button>
+        <button type='button' class='operator' id='divide' data-operation>/</button>
+        <button type='button' class='operator' id='multiply' data-operation>x</button>
+      </div>
+      <div class='calc-buttons action-btn'>
+        <button type='button' class='reset-button' id='reset' data-all-clear>RESET</button>
+        <button type='button' class='equal-all' id='equal' data-equals>=</button>
+      </div>
+    </main>
+  </div>
+  </div>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Oluwatimileyin</a>.
+  </footer>
+  <script src='calculator.js'></script>
+</body>
+</html>
